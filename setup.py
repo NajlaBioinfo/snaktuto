@@ -22,18 +22,18 @@ def get_version(relpath):
 
 
 setup(
-    name='package_name',
-    version=get_version("atlas/__init__.py"),
-    url='https://github.com/najlabioinfo/package-name',
+    name='snaktuto',
+    version=get_version("snaktuto/__init__.py"),
+    url='https://github.com/najlabioinfo/snaktuto',
     license='MIT',
     author='Najla BEN HASSINE',
     author_email='bhndevtools@gmail.com',
-    description='Package description.',
+    description='Try snakemake tutorial.',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    packages=['packagename'],
+    packages=['snaktuto'],
     package_data={'': [
-            "packagename/*",
+            "snaktuto/*",
                        ]},
     data_files=[(".", ["README.md", "LICENSE.txt"])],
     include_package_data=True,
@@ -42,7 +42,7 @@ setup(
     # install via conda: click, pandas, pyyaml, snakemake
     entry_points={
           'console_scripts': [
-              'packagename = packagename.packagename:cli'
+              'snaktuto = snaktuto.snaktuto:cli'
           ]
     },
     classifiers=["Topic :: Scientific/Engineering :: Bio-Informatics"],

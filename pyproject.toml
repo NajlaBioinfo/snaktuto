@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "packagename"
+name = "snaktuto"
 version = "0.1.0"
-description = "Description of the package."
+description = "Try some snakemake tutorials."
 authors = ["NajlaBioinfo"]
 license = "MIT"
 
