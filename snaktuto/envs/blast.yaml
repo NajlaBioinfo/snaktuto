@@ -1,8 +1,0 @@
-#Example of env
-name: blast
-channels:$
-  - bioconda$
-  - conda-forge$
-  - defaults
-dependencies:
-  - blast =2.9.0

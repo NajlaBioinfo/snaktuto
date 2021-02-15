@@ -2,4 +2,4 @@
 projectname: "TestPrj"
 username: "NajlaBioinfo"
 workdir: "/home/NajlaBioinfo"
-datadir: "../data/"
+datadir: "/home/NajlaBioinfo/data/samples"
