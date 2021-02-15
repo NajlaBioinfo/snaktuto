@@ -1,0 +1,47 @@
+########################
+# Load config file
+########################
+configfile: "configs/configuser.yaml"
+
+
+
+
+##########################
+# Rules definition
+##########################
+rule prj_tree:
+	priority: 10
+	params:
+		projectname=config["projectname"],
+		workdir=config["workdir"]
+
+	message: "Step1: Create project tree."
+	log: "logs/prjtree.log"
+	shell:
+		"python  scripts/prjtree.py {params.projectname} {params.workdir}" 
+
+rule mini_report:
+	priority: 8
+	params:
+		username=config["username"],
+		projectname=config["projectname"],
+		workdir=config["workdir"],
+		datadir=config["datadir"]
+	message: "Step2: Create the mini report."
+	log: "logs/minireport.log"
+	shell:
+		r"""python  scripts/minireport.py {params.username} {params.projectname} {params.workdir} {params.datadir}
+		sleep 5
+		""" 
+
+rule clean_all:
+	priority: 1
+	params:
+		projectname=config["projectname"],
+		workdir=config["workdir"]
+	message: "Step3: Move logs to Project Logs"
+	shell:
+		r"""
+		sleep 5
+		mv logs {params.workdir}/{params.projectname}/Logs/
+		"""

@@ -1,0 +1,5 @@
+#configs/configuser.yaml
+projectname: "TestPrj"
+username: "NajlaBioinfo"
+workdir: "/home/NajlaBioinfo"
+datadir: "../data/"
