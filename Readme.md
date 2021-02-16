@@ -12,7 +12,7 @@
 - Ref[1]
 
 >>> Make sure that you are in the right place:
-- git clone /Najlabioinfo/snaktuto.git
+- git clone https://github.com/NajlaBioinfo/snaktuto.git
 - cd snaktuto/snaktuto/
 
 >>> You can run it within 2 ways
