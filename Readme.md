@@ -30,7 +30,7 @@ snakemake --use-conda -n
 
 ### 2. Execute the workflow locally via
 
-snakemake --use-conda --cores $N
+snakemake prj_tree mini_report fastqc multiqc clean_all --use-conda --core 2 --latency-wait 10
 
 ### 3. using $N cores or run it in a cluster environment via
 
