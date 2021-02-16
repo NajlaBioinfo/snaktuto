@@ -11,9 +11,15 @@
 >>> Make sure that you are in conda environment with snakemake installed
 - Ref[1]
 
->>>> Make sure that you are in the right place:
+>>> Make sure that you are in the right place:
 - git clone /Najlabioinfo/snaktuto.git
 - cd snaktuto/snaktuto/
+
+>>> You can run it within 2 ways
+- python snaktuto.py
+or
+- Step by step : Ref[Execute]
+
 
 ## Configure
 >>> You must configure your configs/configuser.yaml file:
