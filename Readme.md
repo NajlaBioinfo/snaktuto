@@ -10,8 +10,13 @@
 ## Install
 >>> Make sure that you are in conda environment with snakemake installed
 - Ref[1]
+- You can use snakemake docker image : 
+ ** https://hub.docker.com/r/najlabioinfo/basicsmk
+```bash
+docker pull najlabioinfo/basicsmk
+```
 
->>> Make sure that you are in the right place:
+>>> Make sure that you are in the right place(outside of your workdir):
 - git clone https://github.com/NajlaBioinfo/snaktuto.git
 - cd snaktuto/snaktuto/
 
@@ -52,4 +57,6 @@ snakemake --use-conda --drmaa --jobs 100
 * https://snakemake.readthedocs.io/en/stable/tutorial/short.html
 * https://www.youtube.com/watch?v=hPrXcUUp70Y
 * [data source] : https://github.com/snakemake/snakemake-tutorial-data/archive/v5.4.5.tar.gz
-* [wrappers]: https://github.com/snakemake/snakemake-wrappers
+* [-wrappers-]: https://github.com/snakemake/snakemake-wrappers
+
+
